@@ -147,18 +147,19 @@ Also, this is going to be our target column for the classification problem, and 
 > * Q11:  What is the top 20 of the total number of violation tickets for every plate type along with the violation description?
 > * Q12:  What is the 5 highest total number of parking violation tickets for every vehicle make along with the violation precinct from highest to lowest? 
 > * Q13:  What is the total number of parking violation tickets for vehicles ending up with expiration before 2018?
-> * 
-> * 
-> * 
-> * 
-> * 
-> * 
-> * 
-> * 
-> * 
-> * 
+> * Q14: What is the total number of parking violation tickets for each vehicle make from highest to lowest.
+> * Q15: What is the total number of parking violation tickets for every registration state along with the sub-division from highest to lowest?
+> * Q16: What is the total number of parking violation tickets for the Registration States TX and OH?
+> * Q17: What are the minimum and the maximum vehicle year that get a parking violation ticket in the BX violation county?
+> * Q18: What is the top 10  total number of parking violation tickets for every issuer squad from highest to lowest?
+> * Q19: What is the top 5 total number of parking violation tickets per vehicle color from highest to lowest?
+> * Q20: What are the top 10 highest total number of parking violation tickets for every vehicle make along with the violation description?
+
 
 ## PySpark-MLClassification
+
+
+
 ## Apache Kafka
 
 
