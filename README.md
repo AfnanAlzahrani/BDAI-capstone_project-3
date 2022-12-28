@@ -181,6 +181,13 @@ https://biggerthandata.blogspot.com/2022/12/table-of-contents-introduction-data.
 We used two Jupyter notebooks to apply Kafka the first notebook was a producer in producer we read a CSV file as a dictionary then we started the Kafka client connection we initiated a new topic called a capstone after that we convert the dictionaries to string and encode it one by one while passing it to the producer.
 The second notebook was a consumer in-consumer we started the Kafka client connection, we connected to the capstone topic that was previously created after that we initiated the MongoDB connection and accessed the Capstone database finally we initiated the consumer to receive the messages, decoded it, convert it to the dictionary and insert every message into the MongoDB.
 
+## Future work 
+
+UI-UX design.
+Send a reminder massage for Vehicle were the Expiration year will end soon & giving fine.
+Adding image processing to get the car information automatically.
+Connecting the GPS with the report application so we can predict the violation code automatically.
+
 ## :octocat:	Team Memebers
 
 - [Abdullah Huwaishel](https://github.com/hush966)
