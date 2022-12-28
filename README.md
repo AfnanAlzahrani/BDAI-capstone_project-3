@@ -13,19 +13,27 @@
 > * [Pig Latin](#)
 > * [PySpark-MLClassification](#)
 > * [Apache Kafka](#)
-> * [Future Work] (#)
+> * [Future Work](#)
 > * [Web blog](#black_small_squarereal-Web_blog)
 > * [Team Memebers](#octocatteam-memebers)
 
-## :green_circle:	 Vision 2030
-Vision 2030 set ambitious goals for Saudi Arabia to achieve a qualitative leap in several areas and programmes, including:
+## Vision 2030
+Vision 2030 sets ambitious goals for Saudi Arabia to achieve a qualitative leap in several areas and programs, including:
 
-The Quality of Life Programme, which is concerned with improving the quality of life of citizens, residents and visitors by supporting and developing new options, including the construction, development and maintenance of roads, and by supporting traffic systems and automated monitoring of violations.
+The Quality of Life Program, which is concerned with improving the quality of life of citizens, residents and visitors by supporting and developing new options, including the construction, development and maintenance of roads, and by supporting traffic systems and automated monitoring of violations.
+
+## Business problem
+The transport area generates a vast amount of data, so we need to process this data automatically rather than manually or in a traditional way. 
+Our business problem is that we have to process a large amount of parking violation reports.
+
+## Our target
+We strive to achieve the objectives of the vision by:
+Utilizing data from the transport sector to prevent irregularities and implementing innovative solutions in line with the Kingdom's vision of digital transformation and achieving excellence.
+
 
 ## About Dataset
-NYC Parking Tickets
-It consists of 51 columns and 42.3M Rows 
-from Aug 2013-June 2017   
+NYC Parking Tickets consist of 51 columns and 42.3M rows from Aug 2013-June to 2017,
+We used the 2017 dataset which consists of over 10,000,000 rows
 
 ### Columns:
 > * Summons Number
@@ -83,9 +91,10 @@ from Aug 2013-June 2017
 
 ## Preprocessing
 
-## Business problem
+Early on in the preprocessing process, we read data in a Spark data frame and analyzed the null values for every column. Some of the columns contained over 50% null values, so we dropped them. After that, we took 30% as our dataset, the dataset contained 1200000 rows.
 
-Therefore, we strive to achieve the objectives of the vision by addressing data from the automated monitoring of irregularities and developing new and intelligent solutions in line with the Kingdom's vision of digital transformation and achieving excellence.
+We started the preprocessing process by dropping the index column. Some of the columns contained a single value so we dropped the unnecessary columns. The columns included spaces so we replaced them with an underscore, some of the colors were referred to as words and some were by shortcuts so we remapped the duplicated colors with the shortcuts, the vehicle year contained a not reasonable number so we limit it from 1950 to 2018, the vehicle make was contained values with less 100 examples so we dropped the values with less than 100 examples, the violation in front of or opposite column was contained I and R values with not enough examples so we dropped the I and R, the vehicle body type was contained values with less 100 examples so we dropped the values with less than 100 examples, and we converted the vehicle expiration date to year.
+
 
 ##  :bar_chart:	EDA
 > *  This plot shows the violation County with the number of tickets and the place where the ticket was issued (front, opposite). the higest County in Violation is NY and the Violation in all County is in front.
@@ -135,10 +144,11 @@ Also, this is going to be our target column for the classification problem, and 
 
 <img src="https://drive.google.com/uc?export=view&id=1jnhncBBv-ETeUdhPsJLDmZGjW-2CzMrc"/>
 
-## :black_small_square:	Web blog
+## 	Web blog
+https://biggerthandata.blogspot.com/2022/12/table-of-contents-introduction-data.html
 
 ## Pig Latin
->  we use Pig Latin to answer 20 interesting questions about our dataset 
+>  we use Pig Latin to answer 20 interesting questions about our dataset : 
 > * Q1: What is the total number of violation tickets per year?
 > * Q2: How much does a vehicle make have a number of parking violation tickets from highest to lowest?
 > * Q3: Count of parking violation tickets per registration state?
@@ -160,10 +170,12 @@ Also, this is going to be our target column for the classification problem, and 
 > * Q19: What is the top 5 total number of parking violation tickets per vehicle color from highest to lowest?
 > * Q20: What are the top 10 highest total number of parking violation tickets for every vehicle make along with the violation description?
 
-
 ## PySpark-MLClassification
-
-
+> * We encode all the categorical columns using StringIndexer and drop the original columns.
+> * Extract the feature and target from the data.
+> * Split the data into training and test sets.
+> * Train and evaluation models: The Gradient Boost is the best model because it has the highest score, especially in f1.
+> 
 
 ## Apache Kafka
 
