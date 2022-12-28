@@ -7,11 +7,13 @@
 > * [Vision 2030](#)
 > * [About Dataset ](#)
 > * [Business problem](#)
+> * [Preprocessing ](#)
 > * [EDA](#)
 > * [Dashboard](#)
 > * [Pig Latin](#)
 > * [PySpark-MLClassification](#)
 > * [Apache Kafka](#)
+> * [Future Work] (#)
 > * [Web blog](#black_small_squarereal-Web_blog)
 > * [Team Memebers](#octocatteam-memebers)
 
@@ -78,6 +80,9 @@ from Aug 2013-June 2017
 > * BBL
 > * NTA
 
+
+## Preprocessing
+
 ## Business problem
 
 Therefore, we strive to achieve the objectives of the vision by addressing data from the automated monitoring of irregularities and developing new and intelligent solutions in line with the Kingdom's vision of digital transformation and achieving excellence.
@@ -126,9 +131,9 @@ Also, this is going to be our target column for the classification problem, and 
 
 ## Dashboard
 
-<img src="https://drive.google.com/uc?export=view&id=1MUVellpzfRlPDMY9E6qvgOpBWIOiWp6D"/>
+<img src="https://drive.google.com/uc?export=view&id=1sCHGE2WNxrkXnwx1fXKZWkhuEofDLeAC"/>
 
-<img src="https://drive.google.com/uc?export=view&id=1mjmGKwge_sXDvskskAUUpC1j0L1syVw1"/>
+<img src="https://drive.google.com/uc?export=view&id=1jnhncBBv-ETeUdhPsJLDmZGjW-2CzMrc"/>
 
 ## :black_small_square:	Web blog
 
