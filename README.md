@@ -178,7 +178,8 @@ https://biggerthandata.blogspot.com/2022/12/table-of-contents-introduction-data.
 > 
 
 ## Apache Kafka
-
+We used two Jupyter notebooks to apply Kafka the first notebook was a producer in producer we read a CSV file as a dictionary then we started the Kafka client connection we initiated a new topic called a capstone after that we convert the dictionaries to string and encode it one by one while passing it to the producer.
+The second notebook was a consumer in-consumer we started the Kafka client connection, we connected to the capstone topic that was previously created after that we initiated the MongoDB connection and accessed the Capstone database finally we initiated the consumer to receive the messages, decoded it, convert it to the dictionary and insert every message into the MongoDB.
 
 ## :octocat:	Team Memebers
 
